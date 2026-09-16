@@ -1,0 +1,45 @@
+﻿<Project Sdk="MSTest.Sdk/4.0.2">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="ApplicationTesting.slnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RunDelta.API\RunDelta.API.csproj" />
+    <ProjectReference Include="..\RunDelta.Globals\RunDelta.Globals.csproj" />
+    <ProjectReference Include="..\RunDelta.Infrastructure\RunDelta.Infrastructure.csproj" />
+    <ProjectReference Include="..\RunDelta.Repository\RunDelta.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.72" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Testing.Extensions.CodeCoverage" Version="18.11.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Testing.Extensions.TrxReport" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="MSTest.TestAdapter" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="MSTest.TestFramework" Version="4.4.1" />
+  </ItemGroup>
+
+</Project>

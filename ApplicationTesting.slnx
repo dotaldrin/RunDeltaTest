@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/System Under Test/">
+	<Project Path="../RunDelta.API/RunDelta.API.csproj" />
+	<Project Path="../RunDelta.Globals/RunDelta.Globals.csproj" />
+	<Project Path="../RunDelta.Infrastructure/RunDelta.Infrastructure.csproj" />
+	<Project Path="../RunDelta.Repository/RunDelta.Repository.csproj" />
+  </Folder>
+  <Project Path="ApplicationTesting.csproj" />
+</Solution>

@@ -1,0 +1,27 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET build output
+bin/
+obj/
+
+# Test execution output
+TestResults/
+*.trx
+coverage/
+coverage.*
+
+# Local test databases
+*.mdf
+*.ldf
+
+# Local configuration / secrets
+secrets.json
+appsettings.Local.json
+appsettings.*.local.json
+
+# OS
+Thumbs.db
+.DS_Store
