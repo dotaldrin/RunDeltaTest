@@ -28,6 +28,7 @@ public sealed class WebhookProcessingTests
             stack.UnitOfWork,
             Mock.Of<IStripeConnectService>(),
             billing ?? stack.Billing,
+            Mock.Of<RunDelta.API.Services.Ride.Payments.IRidePaymentService>(),
             NullLogger<StripeConnectWebhookService>.Instance);
     }
 
